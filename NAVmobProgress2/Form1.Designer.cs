@@ -41,7 +41,8 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 49);
+            this.progressBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.progressBar1.Location = new System.Drawing.Point(12, 51);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(611, 29);
             this.progressBar1.TabIndex = 0;
@@ -101,9 +102,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(14, 25);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(299, 13);
+            this.label4.Size = new System.Drawing.Size(310, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Ikke skru av PC\'en og la den være tilkoblet strøm og nettverk.";
+            this.label4.Text = "Ikke skru av PC\'en, men la den være tilkoblet strøm og nettverk.";
             this.label4.UseWaitCursor = true;
             // 
             // button2
@@ -125,8 +126,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.InfoText;
             this.ClientSize = new System.Drawing.Size(640, 105);
+            this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
@@ -134,12 +136,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "NAV Digital og Mobil Arbeidsplass, klargjøring";
             this.TopMost = true;
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.Form1_Load);
